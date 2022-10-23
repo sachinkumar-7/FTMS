@@ -1,0 +1,37 @@
+/* div{
+    border: 1px solid red;
+    height: 100px;
+}
+.item{
+    width: 30%;
+    text-align: center;
+    line-height: 100px;
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 24pt;
+    flex-grow: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+.grid-item{
+    border: 1px solid red;
+
+}
+
+/* .grid-container{
+    display: grid;
+    grid-template-rows: 100px 300px;
+} */

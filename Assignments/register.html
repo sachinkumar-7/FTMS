@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+
+</head>
+<body style="background-image: url('./image/image.jpg'); background-repeat: no-repeat; background-size: cover; ">
+    <form action="script.html" method="GET">
+        <center> 
+            <h1 style="font-style: unset; color: aliceblue;">Register Here</h1>
+        <table class="tab1" style=" color: aliceblue;"> 
+        <tr>
+            <td>
+                <label for="title">Title</label>
+            </td>
+            <td>
+                <select name="title" id="title" >
+                    <option value="1">Mr.</option>
+                    <option value="2">Mrs.</option>
+                    <option value="3">Ms.</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="First Name">First Name</lable>
+            </td>
+            <td>
+                <input type="text" id="Firstname" Name ="FirstName" placeholder="First name">
+             </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="Last Name">Last Name</lable>
+            </td>
+            <td>
+                <input type="text" id="Lastname" Name ="LastName" placeholder="Last name">
+             </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="Gender">Gender</lable>
+            </td>
+            <td>
+                <input type="radio" id="male" Name ="gender" value="1"/>Male
+                <input type="radio" id="Female" Name ="gender" value="2"/>Female
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="photo"></label>
+            </td>
+            <td>
+                <input type="file" name="photofile" id="photofile" accept="image/*,*.pdf">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="DOB">Date Of Birth</lable>
+            </td>
+            <td>
+                <input type="date" id="Dob" Name ="Dob" placeholder="dd-mm-yy">
+             </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="Address">Address</lable>
+            </td>
+            <td>
+                <textarea id="Address" Name ="Address"placeholder="Enter your address" rows="4" columns ="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="mobile">Mobile</lable>
+            </td>
+            <td>
+                <input type="text" id="Mob" Name ="Mob" placeholder="Enter your Number">
+             </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="email">Email</lable>
+            </td>
+            <td>
+                <input type="text" id="email" Name ="email" placeholder="Enter your Email">
+             </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="username">Username</lable>
+            </td>
+            <td>
+                <input type="text" id="username" Name ="username" >
+             </td>
+        </tr>
+        <tr>
+            <td>
+               <lable for="password">Password</lable>
+            </td>
+            <td>
+                <input type="password" id="pass" Name ="pass" >
+             </td>
+        </tr>
+        </table>
+        <table class="tab2" style=" color: aliceblue; ">
+        <tr>
+            <td>
+               <lable for="Can we contact you?" style="text-align:left;">can we contact you?</lable>
+            </td>
+            <td>
+                <input type="radio" id="yes" Name ="yes" value="1"/>yes
+                <input type="radio" id="No" Name ="No" value="2"/>no
+             </td>
+        </tr>
+        </table>
+        <table style=" color: aliceblue;">
+            <tr>
+                <td>
+                   <lable for="communication Preferrence">can we contact you?</lable>
+                </td>
+                <td>
+                    <input type="checkbox" id="Email" Name ="Email" value="1"/>Email
+                    <input type="checkbox" id="Sms" Name ="Sms" value="2"/>Sms
+                 </td>
+            </tr>
+            </table>
+            <br>
+            <table style=" color: aliceblue;">
+                <tr>
+                    <td>
+                        <input type="checkbox" id="tnc" Name ="tnc" value="1"/>I agree to the <a href="tc.html" style="color:aqua">terms and condition</a> of the website
+                     </td>
+                     <td>
+                        
+                     </td>
+                </tr>
+                </table>
+        <table style=" color: aliceblue;">
+        <tr>
+            <td>
+                <input type="submit" onclick="javascript:saveData();" id="sumbit" Name ="submit" >
+            </td>
+            <td>
+                <input type="reset" id="reset" Name ="reset" value="reset">
+             </td>
+        </tr>
+        </table>
+    
+        </center>
+    </form>
+        <script>
+    
+            function saveData(){
+    
+                var firstName = document.getElementById('Firstname').value;
+    
+                var lastName = document.getElementById('Lastname').value;
+    
+                var address = document.getElementById('Address').value;
+    
+    
+    
+                localStorage.setItem('Firstname',firstName);
+    
+                localStorage.setItem('Lastname',lastName);
+    
+                localStorage.setItem('Address',address);
+    
+            }
+    
+        </script>
+    
+</body>
+</html>

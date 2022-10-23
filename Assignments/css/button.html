@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+<link rel="stylesheet" href="./first.css">
+    <style>
+        .btn{
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: inline-block;
+            color: rgb(33, 31, 31);
+            border: 1px solid whitesmoke;
+            border-radius: 10%;
+            background: rgb(203, 191, 191);
+            box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+            cursor: pointer;
+            max-width: 200px;
+            padding: 20px;
+            text-align: center;
+            margin: 100px;
+            animation: example;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+
+
+        }
+        div:active{
+            color: red;
+            box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+        }
+        @keyframes example{
+              0%{
+                background-color: red;}
+              25%{
+                background-color: rgb(41, 154, 97);}
+              50%{
+                background-color: rgb(31, 10, 94);}
+              75%{
+                background-color: rgb(210, 184, 33);}
+              100%{
+                background-color: rgb(211, 19, 35);}
+              }
+    </style>
+</head>
+<body>
+
+
+    <div class="btn">
+        Click    
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Booking</a>
+            </li>
+            <li>
+                <a href="">About us</a>
+            </li>
+            <li>
+                <a href="">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
